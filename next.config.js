@@ -1,5 +1,8 @@
+const withTM = require("next-transpile-modules")(["@blockle/blocks-v2"]);
 const { createVanillaExtractPlugin } = require("@vanilla-extract/next-plugin");
-const withVanillaExtract = createVanillaExtractPlugin();
+const withVanillaExtract = createVanillaExtractPlugin({
+  externals: ["@blockle/blocks-v2"],
+});
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -7,4 +10,4 @@ const nextConfig = {
   swcMinify: true,
 };
 
-module.exports = withVanillaExtract(nextConfig);
+module.exports = withVanillaExtract(withTM(nextConfig));
