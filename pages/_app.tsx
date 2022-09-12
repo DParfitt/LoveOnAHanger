@@ -1,3 +1,4 @@
+import "@blockle/blocks-v2/src/reset.css";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { BlocksProvider } from "@blockle/blocks-v2";
