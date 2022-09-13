@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@blockle/blocks-v2": "^0.0.6",
+    "@blockle/blocks-v2": "^0.0.7",
     "@vanilla-extract/sprinkles": "^1.5.0",
     "next": "12.3.0",
     "react": "18.2.0",
