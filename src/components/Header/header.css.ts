@@ -1,5 +1,9 @@
 import { style } from '@vanilla-extract/css';
 
 export const header = style({
-  height: '5rem',
+  minHeight: '5rem',
+});
+
+export const bar = style({
+  minHeight: '1rem',
 });

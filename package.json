@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@blockle/blocks-v2": "^0.0.10",
+    "@blockle/blocks-v2": "^0.0.17",
     "@vanilla-extract/sprinkles": "^1.5.0",
-    "next": "^12.3.1",
+    "next": "^13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -22,10 +22,10 @@
     "@vanilla-extract/babel-plugin": "^1.2.0",
     "@vanilla-extract/css": "^1.9.1",
     "@vanilla-extract/css-utils": "^0.1.2",
-    "@vanilla-extract/next-plugin": "^2.1.0",
+    "@vanilla-extract/next-plugin": "^2.1.1",
     "eslint": "8.23.1",
     "eslint-config-next": "^12.3.1",
-    "next-transpile-modules": "^9.0.0",
+    "next-transpile-modules": "^9.1.0",
     "typescript": "4.8.3"
   }
 }

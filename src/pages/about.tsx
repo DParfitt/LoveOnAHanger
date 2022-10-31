@@ -9,11 +9,12 @@ const Home: NextPage = () => {
 
       <Box as="main" padding="gutter">
         <Stack gap="medium">
-          <Heading level={1}>Love On A Hanger</Heading>
+          <Heading level={1}>About</Heading>
 
           <Text as="p">
-            Lots of lovely new accessories! And our coffee shop will have TOASTED SANDWICHES on
-            Wednesday morning along with our normal delicious cakes and quiches. Invite a friend!❤️
+            Love on a Hanger is a pre-loved ladies clothing boutique. Our sole purpose is to raise
+            funds for vulnerable children. We are open on Wednesdays from 9am-12pm and Fridays from
+            11:00am - 13.30 pm.
           </Text>
         </Stack>
       </Box>
