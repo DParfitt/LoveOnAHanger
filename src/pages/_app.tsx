@@ -1,10 +1,10 @@
 import { BlocksProvider } from '@blockle/blocks-v2';
 import '@blockle/blocks-v2/src/reset.css';
-import { theme } from '@blockle/blocks-v2/src/Themes/LoveOnAHanger';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import Link from 'next/link';
 import { FC } from 'react';
+import { theme } from '../theme';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   return (
