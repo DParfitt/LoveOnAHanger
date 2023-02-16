@@ -1,10 +1,11 @@
-import { BlocksProvider } from '@blockle/blocks-v2';
+import { BlocksProvider, Box } from '@blockle/blocks-v2';
 import '@blockle/blocks-v2/src/reset.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import Link from 'next/link';
 import { FC } from 'react';
 import { theme } from '../theme';
+import * as styles from './app.css';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   return (
@@ -15,7 +16,9 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <BlocksProvider theme={theme} spriteUrl="/icons.svg" linkComponent={Link}>
-        <Component {...pageProps} />
+        <Box className={styles.app} display="flex" flexDirection="column">
+          <Component {...pageProps} />
+        </Box>
       </BlocksProvider>
     </>
   );

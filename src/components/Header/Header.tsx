@@ -48,7 +48,7 @@ export const Header: FC = () => {
           />
         </Box>
         <Box display={['none', 'flex']} alignItems="center">
-          <Inline gap="medium" alignX="center" alignY="center">
+          <Inline as="nav" gap="medium" alignX="center" alignY="center">
             <img src="/logo.png" alt="Love on a hangar" style={{ height: '40px' }} />
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>

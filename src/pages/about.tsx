@@ -7,7 +7,7 @@ const Home: NextPage = () => {
     <>
       <Header />
 
-      <Box as="main" padding="gutter">
+      <Box as="main" padding="gutter" flexGrow={1}>
         <Stack gap="medium">
           <Heading level={1}>About</Heading>
 

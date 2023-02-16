@@ -10,6 +10,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   transpilePackages: externals,
+  // assetPrefix: './',
 };
 
 module.exports = withVanillaExtract(nextConfig);
