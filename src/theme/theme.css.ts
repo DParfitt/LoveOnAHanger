@@ -11,6 +11,7 @@ export const themeVars = makeTheme({
     xlarge: '24px',
   },
   color: {
+    black: '#000',
     white: '#fff',
     body: '#d1c8a5',
     primaryLight: '#E4DFFF',
@@ -26,7 +27,9 @@ export const themeVars = makeTheme({
     link: '#7265E3',
   },
   fontFamily: {
-    standard: '"Rubik", sans-serif',
+    body: '"Rubik", sans-serif',
+    primary: '"Rubik", sans-serif',
+    secondary: '"Rubik", sans-serif',
   },
   // 20 | 16 | 14 | 12
   fontSize: {

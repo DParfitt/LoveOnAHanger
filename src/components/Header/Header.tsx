@@ -1,6 +1,7 @@
-import { Box, Button, IconButton, Inline, Link, Stack, Text } from '@blockle/blocks-v2';
+import { Box, Button, IconButton, Inline, Stack, Text } from '@blockle/blocks-v2';
 import { FC, useState } from 'react';
 import { Drawer } from '../Drawer/Drawer';
+import { Link } from '../Link/Link';
 import * as styles from './header.css';
 
 export const Header: FC = () => {
@@ -8,31 +9,9 @@ export const Header: FC = () => {
 
   return (
     <>
-      {/* Mobile menu */}
-      {/* <Box
-        as="header"
-        display={['flex', 'none']}
-        alignItems="center"
-        paddingX="gutter"
-        className={styles.header}
-      >
-        <IconButton
-          name="bus"
-          label="Open navigation"
-          color="primary"
-          size="medium"
-          onClick={() => setDrawerOpen(true)}
-        />
-
-        <Box flexGrow={1} display="flex" justifyContent="center" marginRight="xlarge">
-          <Heading level={1}>Love on a hangar</Heading>
-        </Box>
-      </Box> */}
-
       {/* Tablet and up menu */}
       <Box
         as="header"
-        // display={['none', 'flex']}
         display="flex"
         alignItems="center"
         paddingX="gutter"
