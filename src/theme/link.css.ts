@@ -1,5 +1,5 @@
 import { createComponentTheme } from '@blockle/blocks-v2/src/components/BlocksProvider/createComponentTheme';
-import { style } from '@vanilla-extract/css';
+import { style, styleVariants } from '@vanilla-extract/css';
 
 export const link = createComponentTheme('link', ({ vars }) => ({
   base: style({
@@ -12,6 +12,23 @@ export const link = createComponentTheme('link', ({ vars }) => ({
     },
     ':focus-visible': {
       outline: vars.outline.focus,
+    },
+  }),
+  variant: styleVariants({
+    inherit: {},
+    primary: {
+      textDecoration: 'none',
+      color: vars.color.primary,
+      ':hover': {
+        color: vars.color.secondary,
+      },
+    },
+    secondary: {
+      textDecoration: 'none',
+      color: vars.color.secondary,
+      ':hover': {
+        color: vars.color.secondary,
+      },
     },
   }),
 }));

@@ -4,8 +4,8 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import Link from 'next/link';
 import { FC } from 'react';
+import * as styles from '../css/app.css';
 import { theme } from '../theme';
-import * as styles from './app.css';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   return (
